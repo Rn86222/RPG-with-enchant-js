@@ -1468,7 +1468,7 @@ window.onload = function () {
 		tweetBtn.ontouchend = function () {				//S_Tweetボタンをタッチした（タッチして離した）時にこの中の内容を実行する
 			//ツイートＡＰＩに送信
 			//結果ツイート時にURLを貼るため、このゲームのURLをここに記入してURLがツイート画面に反映されるようにエンコードする
-			const url = encodeURI("rn86222rpg.starfree.jp");
+			const url = encodeURI("http://rpgrn86222.stars.ne.jp/");
 			if (!conbatMaou) {
 				window.open("http://twitter.com/intent/tweet?text=" + hero[0] + "はLv" + hero[5] + "になった&hashtags=Rn86&url=" + url); //ハッシュタグにRn86タグ付くようにした。
 			}
