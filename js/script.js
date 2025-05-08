@@ -249,6 +249,9 @@ window.onload = function () {
 			}).done(function (data) {
 				data = data.split('\n');
 				for (let i = 0; i < 8; i++) {
+					if (!data[i]) {
+						break;
+					}
 					tmp = data[i].split(',');
 					nameList += (i + 1) + "位   " + tmp[0].slice(1, -1) + "<br>";
 					levelList += "Lv " + tmp[1] + "<br>";
