@@ -20,7 +20,7 @@ function sortByKey($key_name, $sort_order, $array) {
 function saveData(){
     // rn86222rpg.starfree.jp* 以外からのリクエストは拒否する
     $referer = $_SERVER['HTTP_REFERER'];
-    if(strpos($referer,'rn86222rpg.starfree.jp')  === false)
+    if(strpos($referer,'rpgrn86222.stars.ne.jp')  === false)
         return;
 
    $stack = array();
